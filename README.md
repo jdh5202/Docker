@@ -6,7 +6,8 @@
 * Network : 172.0.0.10/24
 * Port : 8080
 
+## Web-DB
 
-## Wordpress + mysql
-* Network : 172.0.0.11/24
-* Port : 8080
+### Wordpress + MySQL
+* Network : 172.1.0.10/24
+* Port : 8180
