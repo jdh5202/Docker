@@ -1,0 +1,22 @@
+#!/bin/sh
+version: "3.5"
+
+services:
+    ap-web:
+        image: php:7.3.3-apache
+        container_name: ap-web
+        volumes:
+            - ./data/html:/var/www/html
+        working_dir: /var/www/html
+        ports:
+            - "8080:80"
+        networks:
+            ap-backend:
+                ipv4_address: 172.0.0.10
+                
+networks:
+    ap-backend:
+        driver: bridge
+        ipam:
+            config:
+                - subnet: 172.0.0.0/24       
