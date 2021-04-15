@@ -11,10 +11,7 @@ services:
       MYSQL_DATABASE: wordpress
       MYSQL_USER: wordpress
       MYSQL_PASSWORD: wordpress
-    networks:
-          mysql-backend:
-              ipv4_address: 172.1.0.10
-    
+
   wordpress:
     depends_on:
       - db
@@ -29,9 +26,3 @@ services:
       WORDPRESS_DB_NAME: wordpress            
 volumes:
   db_data: {}
-networks:
-    mysql-backend:
-        driver: bridge
-        ipam:
-            config:
-                - subnet: 172.1.0.0/24  
