@@ -10,14 +10,14 @@ services:
             - NODE_ENV=development
         working_dir: /app
         ports:
-            - "8083:8080"
+            - "8081:3000"
         networks:
             node-backend:
-                ipv4_address: 172.3.0.2
+                ipv4_address: 172.1.0.10
                 
 networks:
     node-backend:
         driver: bridge
         ipam:
             config:
-                - subnet: 172.3.0.0/24
+                - subnet: 172.1.0.0/24
