@@ -1,0 +1,21 @@
+version: "3.5"
+
+services:
+    flask:
+        build: ./docker/flask
+        container_name: flask-web
+        volumes:
+            - ./data/flask:/app
+        working_dir: /app
+        ports:
+            - "8081:8080"
+        networks:
+            flask-backend:
+                ipv4_address: 172.1.0.2
+                
+networks:
+    flask-backend:
+        driver: bridge
+        ipam:
+            config:
+                - subnet: 172.1.0.0/24       
