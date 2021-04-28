@@ -15,3 +15,5 @@
 # Penetration
 #### webgoat/webwolf
 * Port : 8082/9001
+* URL: http://localhost:8082/WebGoat/login
+
