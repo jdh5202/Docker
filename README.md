@@ -11,3 +11,7 @@
 #### Wordpress + MySQL
 * Network : 172.1.0.10/24
 * Port : 8180
+
+# Penetration
+#### webgoat/webwolf
+* Port : 8082/9001
