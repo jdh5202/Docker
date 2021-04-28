@@ -1,0 +1,9 @@
+version: "3.5"
+
+services:
+    beebox-web:
+        image: raesene/bwapp
+        container_name: beebox-web
+        ports:
+            - "8084:80"
+        command: ls
