@@ -16,4 +16,4 @@
 #### webgoat/webwolf
 * Port : 8082/8083
 * webgoat URL: http://localhost:8082/WebGoat/login 
-* webwolf URL: http://localhost:9090/WebWolf
+* webwolf URL: http://localhost:8083/WebWolf
