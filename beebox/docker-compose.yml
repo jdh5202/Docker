@@ -6,4 +6,3 @@ services:
         container_name: beebox-web
         ports:
             - "8084:80"
-        command: ls
