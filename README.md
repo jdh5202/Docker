@@ -20,3 +20,4 @@
 
 #### beebox
 * Port : 8084
+* DB activate : curl http://127.0.0.1:8084/install.php?install=yes
